@@ -1,0 +1,32 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+.page-break {
+  page-break-after: always;
+}
+ul {
+  list-style-type: square;
+}
+/* section {
+  page-break-inside: avoid;
+} */
+
+@media print {
+  @page {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @bottom-center {
+      content: counter(page) " of " counter(pages);
+    }
+  }
+  body {
+    margin: 1.6cm;
+  }
+}
+
+.container-md {
+  border: 1px solid black;
+  border-radius: 16px;
+}
